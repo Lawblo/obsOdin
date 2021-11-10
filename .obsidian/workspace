@@ -1,0 +1,101 @@
+{
+  "main": {
+    "id": "1ef58340a96af2a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "b4653eea0db91b9f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Git Cheatsheet.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5e2ab1cb62dc890b",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a2c8c19c01996ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "92e0d8722ceb4201",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "29c37a7eab025263",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 327
+  },
+  "right": {
+    "id": "ef26b9ac3fa75bf5",
+    "type": "split",
+    "children": [
+      {
+        "id": "1b48f267a9dbfd54",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f6c9c6bcecce0a78",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Git Cheatsheet.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "b4653eea0db91b9f",
+  "lastOpenFiles": [
+    "Git Cheatsheet.md",
+    "Flexbox.md",
+    "TheOdinProject.md",
+    "CSS.md",
+    "CSS Properties.md",
+    "HTML.md",
+    "HTML boilerplate.md",
+    "The Box Model.md",
+    "CSS Selector Syntax.md",
+    "adding CSS to HTML.md"
+  ]
+}

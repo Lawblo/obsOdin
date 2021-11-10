@@ -1,0 +1,8 @@
+{
+  "showFrontmatter": true,
+  "strictLineBreaks": true,
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true,
+  "foldHeading": true,
+  "foldIndent": false
+}
