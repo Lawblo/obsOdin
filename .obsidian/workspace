@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "b4653eea0db91b9f",
+        "id": "78856e13a455aac5",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -85,7 +85,7 @@
     "direction": "horizontal",
     "width": 123
   },
-  "active": "b4653eea0db91b9f",
+  "active": "78856e13a455aac5",
   "lastOpenFiles": [
     "JavaScript.md",
     "Flexbox.md",
