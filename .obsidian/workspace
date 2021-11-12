@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Git Cheatsheet.md",
+            "file": "JavaScript.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 327
+    "width": 183
   },
   "right": {
     "id": "ef26b9ac3fa75bf5",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git Cheatsheet.md",
+                "file": "JavaScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -83,19 +83,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 123
   },
   "active": "b4653eea0db91b9f",
   "lastOpenFiles": [
-    "Git Cheatsheet.md",
+    "JavaScript.md",
     "Flexbox.md",
+    "The Box Model.md",
     "TheOdinProject.md",
-    "CSS.md",
-    "CSS Properties.md",
     "HTML.md",
     "HTML boilerplate.md",
-    "The Box Model.md",
     "CSS Selector Syntax.md",
-    "adding CSS to HTML.md"
+    "CSS Properties.md",
+    "CSS.md",
+    "Git Cheatsheet.md"
   ]
 }

@@ -1,18 +1,19 @@
 # [[CSS]] Properties
 
 #### Color
-<pre>color: value; </pre>
+`color: value;`
 and 
-<pre>background-color: value;</pre>
+`background-color: value;`
 
 Can take keywords, as well as HEX, RGB and HSL values
 
 #### Typography Basics and text-align
-<pre>font-family: "specific font name", fallback font family;</pre>
-<pre>font-size: value;</pre>
-<pre>font-weight: value;</pre>
+- `font-family: "specific font name", fallback font family;`
+- `font-size: value;`
+- `font-weight: value;`
+
 Value can be a keyword, like bold, or a number between 1-1000
-<pre>text-align: value;</pre>
+- `text-align: value;`
 Align text horizontally within an element
 
 #### Image Height and Width

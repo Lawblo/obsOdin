@@ -12,4 +12,4 @@ Everything is the same as with the external mode, except that the CSS is within 
 #### Inline CSS
 Adds CSS directly to HTML elements
 
-In HTML: <pre>&lt;div style="property: value;"</pre>
+In HTML: `<div style="property: value;">`
