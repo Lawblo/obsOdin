@@ -4,5 +4,6 @@
   "readableLineLength": false,
   "alwaysUpdateLinks": true,
   "foldHeading": true,
-  "foldIndent": false
+  "foldIndent": false,
+  "promptDelete": false
 }

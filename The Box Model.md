@@ -1,6 +1,6 @@
 #CSS #positioning #layout 
 # The Box Model
-Positioning and layout of [[HTML]] with [[CSS]]
+[[CSS]]
 
 Basically, every single thing on a webpage is a rectangular box. These boxes can have other boxes in them and can sit alongside one another
 
