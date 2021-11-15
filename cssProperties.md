@@ -1,4 +1,4 @@
-# [[CSS]] Properties
+# [[css]]Properties
 
 #### Color
 `color: value;`

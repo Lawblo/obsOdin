@@ -1,6 +1,6 @@
 # adding [[CSS]] to [[HTML]]
 #### External CSS
-`<ink rel="stylesheet" href="styles.css">`
+`<link rel="stylesheet" href="styles.css">`
 
 Normal way to to CSS
 

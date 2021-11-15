@@ -3,8 +3,8 @@
 How make sure your [[HTML]] looks good when viewed in a webpage
 
 - [[adding CSS to HTML]]
-- [[CSS Selector Syntax]]
-- [[CSS Properties]]
+- [[cssSelectorSyntax]]
+- [[cssProperties]]
 
 
 ### The Cascade of CSS

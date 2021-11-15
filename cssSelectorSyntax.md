@@ -1,4 +1,4 @@
-# [[CSS]] Selector Syntax
+# [[css]]SelectorSyntax
 #CSS #HTML
 
 #### General Form:
