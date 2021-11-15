@@ -554,7 +554,7 @@ switch (expression) {
 7.  The keyword `default`, followed by exactly the same code pattern as one of the cases (bullets 3–5), except that `default` does not have a choice after it, and you don't need to `break` statement as there is nothing to run after this in the block anyway. This is the default option that runs if none of the choices match.
 
 ### Ternary operator (?)
-Syntax: <code>( condition ) ? run this code : run this code instead</code>
+Syntax:`(condition) ? run this code : run this code instead`
 
 
 ### logical operators
@@ -654,17 +654,47 @@ That is, the first NOT converts the value to boolean and returns the inverse, an
 
 The precedence of NOT `!` is the highest of all logical operators, so it always executes first, before `&&` or `||`.
 
+### Nullish Coalescence
+- `??` returns the first argument if it’s not `null/undefined`. Otherwise, the second one.
+- ex: `a ?? b`:
+	- if `a` is defined, then `a`,
+	- if `a` isn’t defined, then `b`.
+
+#### ?? vs ||
+|| returns the first *truthy* value, while ?? returns the first *defined* value
+
+`??` works best when most falsy values, such as 0, should be considered "normal".
+
+
 # Functions
 
 **functions** allow you to store a piece of code that does a single task inside a defined block, and then call that code whenever you need it using a single short command — rather than having to type out the same code multiple times.
+Functions are the main “building blocks” of the program. They allow the code to be called many times without repetition.
 
 ##### Syntax: 
+The `function` keyword goes first, then goes the _name of the function_, then a list of _parameters_ between the parentheses, and finally the code of the function, also named “the function body”, between curly braces.
 
-function functionName()  {
-	code
+``` javascript
+function name(parameters, delimited, by, comma) {
+  /* code */
 }
+```
 
+-   Values passed to a function as parameters are copied to its local variables.
+-   A function may access outer variables. But it works only from inside out. The code outside of the function doesn’t see its local variables.
+-   A function can return a value. If it doesn’t, then its result is `undefined`.
+
+#### Parameters
 Some functions require **parameters** to be specified when you are invoking them — these are values that need to be included inside the function parentheses, which it needs to do its job properly.
+
+When a value is passed as a function parameter, it’s also called an _argument_.
+
+In other words, to put these terms straight:
+
+-   A parameter is the variable listed inside the parentheses in the function declaration (it’s a declaration time term)
+-   An argument is the value that is passed to the function when it is called (it’s a call time term).
+
+
 
 #### Scope
 
@@ -673,3 +703,83 @@ When you create a function, the variables and other things defined inside the fu
 The top level outside all your functions is called the **global scope**. Values defined in the global scope are accessible from everywhere in the code.
 
 A function can be called from anywhere, even from another function. 
+
+#### Naming a function
+
+Functions are actions, so their names is usually a verb. 
+- ex: 
+	- show
+	- get
+	- calc
+	- create
+	- check
+
+A function should do exactly what the name implies, no more. 
+
+
+#### Function Expressions vs Fnction Declarations
+First, the syntax: how to differentiate between them in the code.
+
+**Function Declaration**:  a function, declared as a separate statement, in the main code flow:
+
+```javascript
+// Function Declaration
+function sum(a, b) {
+	return a + b;
+}
+```
+    
+**Function Expression**: a function, created inside an expression or inside another syntax construct. Here, the function is created at the right side of the “assignment expression” `=`:
+```javascript
+// Function Expression
+let sum = function(a, b) {
+	return a + b;
+};
+```
+
+A Function Expression is created when the execution reaches it and is usable only from that moment.
+
+A Function Declaration can be called earlier than it is defined.
+
+When JavaScript prepares to run the script, it first looks for global Function Declarations in it and creates the functions. We can think of it as an “initialization stage”.
+
+And after all Function Declarations are processed, the code is executed. So it has access to these functions
+
+##### Function Expression Summary
+
+-   Functions are values. They can be assigned, copied or declared in any place of the code.
+-   If the function is declared as a separate statement in the main code flow, that’s called a “Function Declaration”.
+-   If the function is created as a part of an expression, it’s called a “Function Expression”.
+-   Function Declarations are processed before the code block is executed. They are visible everywhere in the block.
+-   Function Expressions are created when the execution flow reaches them.
+
+In most cases when we need to declare a function, a Function Declaration is preferable, because it is visible prior to the declaration itself. That gives us more flexibility in code organization, and is usually more readable.
+
+So we should use a Function Expression only when a Function Declaration is not fit for the task. We’ve seen a couple of examples of that in this chapter, and will see more in the future.
+
+
+## Arrow Functions
+Single line arrow functions takes arguments from the left side of `=>` and evaluates the right side expression with them . 
+
+With more complex arrow functions the expressions should be enclosed by curly braces, then use a normal return.
+
+```javascript
+let func = (arg1, arg2, ..., argN) => expression
+```
+
+##### Example: 
+```javascript
+let sum = (a, b) => a + b;
+/* This arrow function is a shorter form of:*/
+
+let sum = function(a, b) {
+  return a + b;
+};
+```
+
+If we have only one argument, then parentheses around parameters can be omitted.
+If there are no arguments, paretheses will be empty but should still be present. 
+
+- Arrow functions are handy for one-liners. They come in two flavors:
+	1.  Without curly braces: `(...args) => expression` – the right side is an expression: the function evaluates it and returns the result.
+	2.  With curly braces: `(...args) => { body }` – brackets allow us to write multiple statements inside the function, but we need an explicit `return` to return something.
