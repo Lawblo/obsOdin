@@ -1,6 +1,6 @@
 # adding [[CSS]] to [[HTML]]
 #### External CSS
-<pre>&lt;link rel="stylesheet" href="styles.css"&gt;</pre>
+`<ink rel="stylesheet" href="styles.css">`
 
 Normal way to to CSS
 

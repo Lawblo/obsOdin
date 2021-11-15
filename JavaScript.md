@@ -94,6 +94,7 @@ Some good-to-follow rules:
 - If you add a number and a string, the result will be a string concatenation
 - If you add a string and a number, the result will be a string concatenation
 - The JavaScript interpretor works from left to right. 
+
 ### Numeric strings
 - JavaScript strings can have numeric content
 - JavaScript will try to convert strings to numbers in all numeric operations
@@ -101,6 +102,7 @@ Some good-to-follow rules:
 	- JavaScript will try to convert strings to numbers when multiplying
 	- JavaScript will try to convert strings to numbers when subtracting
 	- **JavaScript will NOT convert strings to numbers when adding**
+
 ### NaN - Not a Number
 - `NaN` is a JavaScript reserved word indicating that a number is not a legal number.Trying to do arithmetic with a non-numeric string will result in `NaN` (Not a Number)
 	- However, if the string contains a numeric value , the result will be a number	
@@ -108,10 +110,12 @@ Some good-to-follow rules:
 - Watch out for `NaN`. If you use `NaN` in a mathematical operation, the result will also be `NaN`
 	- Or the result might be a concatenation
 - `NaN` is a number: `typeof NaN` returns `number`
+
 ### Infinity
 - `Infinity` (or `-Infinity`) is the value JavaScript will return if you calculate a number outside the largest possible number
 - Division by 0 (zero) also generates `Infinity`
 - `Infinity` is a number: `typeof Infinity` returns `number`
+
 ### Hexadecimal
 - JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x
 	- ex: 0xFF = 255
@@ -120,6 +124,7 @@ Some good-to-follow rules:
 - By default, JavaScript displays numbers as **base 10** decimals.
 	- But you can use the `toString()` method to output numbers from **base 2** to **base 36**.
 	- Hexadecimal is **base 16**. Decimal is **base 10**. Octal is **base 8**. Binary is **base 2**.
+
 ### JavaScript Numbers as Objects
 - Normally JavaScript numbers are primitive values created from literals
 - But numbers can also be defined as objects with the keyword `new`
@@ -133,31 +138,25 @@ let x = 500;
 let y = new Number(500);
 </pre>
 - Comparing two JavaScript objects **always** returns **false**.
+
 ## JavaScript Arithmetic Operators
 Arithmetic operators perform arithmetic on numbers (literals or variables)
 
-<pre>
-Operator 		Description
 
-+ 			Addition
+|Operator|Description|
+| - | - |
+|+|Addition|
+|-|Subtraction|
+|* |Multiplication|
+|** |Exponentiation|
+|/|Division|%|Modulus (Remainder)|
+|++|Increment|
+|--|Decrement|
 
-- 			Subtraction
-
-*			Multiplication
-
-** 			Exponentiation
-
-/ 			Division
-
-% 			Modulus (Remainder)
-
-++ 			Increment
-
---	 		Decrement
-</pre>
 ### Arithmetic Operations
 - A typical arithmetic operation operates on two numbers
 - The two numbers can be literals,variables,or expressions
+
 ### Operators and Operands
 - The numbers (in an arithmetic operation) are called **operands**
 - The operation (to be performed between the two operands) is defined by an **operator**
@@ -175,17 +174,20 @@ Operator 		Description
 - The **decrement** operator (`--`) decrements numbers
 - The **exponentiation** operator (`**`) raises the first operand to the power of the second operand
 - x ** y produces the same result as `Math.pow(x,y)`
+
 ### Operator Precedence 
 - Operator precedence describes the order in which operations are performed in an arithmetic expression.
 - Multiplication (`*`) and division (`/`) have higher **precedence** than addition (`+`) and subtraction (`-`)
 - The precedence can be changed by using parentheses
 	- When using parentheses, the operations inside the parentheses are computed first.
 - When many operations have the same precedence (like addition and subtraction), they are computed from left to right
+
 ## Increment and decrement operators
 Sometimes you'll want to repeatedly add or subtract one to or from a numeric variable value. This can be conveniently done using the increment (`++`) and decrement (`--`) operators.
 
 `++var` increases that variable then returns it
 `var++` returns that variable then increases it
+
 ## Assignment operators
 The most common assignment operator is the = operator which assigns the variable on the left the value on the right. 
 
@@ -198,6 +200,7 @@ The most common assignment operator is the = operator which assigns the variable
 
 ## Comparison operators
 These operators are boolean and thus return a true/false value
+
 |Operator|Name|Purpose|Example|
 | :-: | :- | :-: | :-: |
 |`===`|Strict equality|Tests whether the left and right values are identical to one another|`5 === 2 + 4`|
@@ -229,6 +232,7 @@ A string in JS must be surrounded by quotes.
 Double and single quotes are “simple” quotes. There’s practically no difference between them in JavaScript.
 
 Backticks are “extended functionality” quotes. They allow us to embed variables and expressions into a string by wrapping them in `${…}`. The expression inside `${…}` is evaluated and the result becomes part of the string. 
+
 ### Boolean (logical type)
 The boolean type only has two values: `true` and `false`.
 
@@ -245,8 +249,10 @@ If a variable is declared but not assigned, then its value is `undefined`.
 `Objects` are used to store colletions of data and more complex entities. Other types are called "primitive" because they can only contain one thing. 
 
 The `symbol` type is used to create unique identifiers for objects. 
+
 ### The typeof operator
 The `typeof` operator returns the type of the arugment. It supports two forms of syntax: `typeof x` and `typeof(x)`.
+
 ### Summary:
 There are 8 basic data types in JavaScript.
 
@@ -284,17 +290,20 @@ In order to split a traditional string over multiple lines, a newline character,
 ### JavaScript String Methods
 All string methods return a new string. They don't modify the original string.  
 Formally said: Strings are immutable: Strings cannot be changed, only replaced.
+
 #### String Length
 The `length` property returns the length of a string. EX:
 <pre>
 let txt = "text";
 let txtlength = txt.length;
 </pre>
+
 #### Extracting String Parts
 Three methods for extracting a part of a string: 
 - `slice(start, end)`
 - `substring(start, end)`
 - `substr(start, length)`
+
 ##### slice() Method
 `slice()` extracts a part of a string and returns the extracted part in a new string. The method takes 2 parameters: the start positions, and the end position (end not included). EX:
 ```` JavaScript
@@ -310,6 +319,7 @@ let part = str.slice(-12, -6);
 ````
 
 If you omit the second parameter, the method wiill slice out the rest of the string
+
 ##### substring() Method
 `substring()` is similar to `slice()`.
 The difference is that `substring()` cannot accept negative indexes. EX: 
@@ -317,6 +327,7 @@ The difference is that `substring()` cannot accept negative indexes. EX:
 let str = "Apple, Banana, Kiwi";  
 let part = substring(7, 13);
 ````
+
 ##### substr() Method
 `substr()` is similar to `slice()`.The difference is that the second parameter specifies the **length** of the extracted part.
 ```` JavaScript>
@@ -442,6 +453,7 @@ These are not standard methods, and may not work as expected.
 A **method** is a bit of functionality that is build into the language or into specific data types. 
 
 ## Conditionals
+
 ### Comparisons
 - Greater than: `<`
 - Less than: `>`
@@ -488,20 +500,74 @@ There’s a non-intuitive behavior when `null` or `undefined` are compared to ot
 `null/undefined` are converted to numbers: `null` becomes `0`, while `undefined` becomes `NaN`.
 
 	
-### if else and else if
-Conditional statements in JS:
+### if...else and else if
 
+Conditional statements in JS:
 -   `if` specifies a block of code to be executed, if a specified condition is true
 -   `else` specifies a block of code to be executed, if the same condition is false
 -   `else if` specifies a new condition to test, if the first condition is false
 -   `switch` specifies many alternative blocks of code to be executed
+
+##### basic if...else syntax
+<pre>
+if (condition) {
+  code to run if condition is true
+} else {
+  run some other code instead
+}
+</pre>
+
+The else block of code is not neccessary.
+
+Shorthand syntax without curly brackets: 
+<pre>
+if (condition) code to run if condition is true
+else run some other code instead
+</pre>
+
+### switch
+
+#### pseudocode
+<pre>
+switch (expression) {
+  case choice1:
+    run this code
+    break;
+
+  case choice2:
+    run this code instead
+    break;
+
+  // include as many cases as you like
+
+  default:
+    actually, just run this code
+}
+</pre>
+
+1.  The keyword `switch`, followed by a set of parentheses.
+2.  An expression or value inside the parentheses.
+3.  The keyword `case`, followed by a choice that the expression/value could be, followed by a colon.
+4.  Some code to run if the choice matches the expression.
+5.  A `break` statement, followed by a semi-colon. If the previous choice matches the expression/value, the browser stops executing the code block here, and moves on to any code that appears below the switch statement.
+6.  As many other cases (bullets 3–5) as you like.
+7.  The keyword `default`, followed by exactly the same code pattern as one of the cases (bullets 3–5), except that `default` does not have a choice after it, and you don't need to `break` statement as there is nothing to run after this in the block anyway. This is the default option that runs if none of the choices match.
+
+### Ternary operator (?)
+Syntax: <code>( condition ) ? run this code : run this code instead</code>
+
 
 ### logical operators
 The four logical operators in JavaScript:
 - OR: `||`
 - AND: `&&`
 - NOT: `!`
-- Nullish Coalescing: `??` 
+- Nullish Coalescing: `??`
+
+
+##### summary
+-   `&&` — AND; allows you to chain together two or more expressions so that all of them have to individually evaluate to `true` for the whole expression to return `true`.
+-   `||` — OR; allows you to chain together two or more expressions so that one or more of them have to individually evaluate to `true` for the whole expression to return `true`.
 
 #### Truthy values
 A **truthy** value is a value that is considered `true` when encoutered in a boolean context. 
@@ -588,3 +654,22 @@ That is, the first NOT converts the value to boolean and returns the inverse, an
 
 The precedence of NOT `!` is the highest of all logical operators, so it always executes first, before `&&` or `||`.
 
+# Functions
+
+**functions** allow you to store a piece of code that does a single task inside a defined block, and then call that code whenever you need it using a single short command — rather than having to type out the same code multiple times.
+
+##### Syntax: 
+
+function functionName()  {
+	code
+}
+
+Some functions require **parameters** to be specified when you are invoking them — these are values that need to be included inside the function parentheses, which it needs to do its job properly.
+
+#### Scope
+
+When you create a function, the variables and other things defined inside the function are inside their own separate **scope**, meaning that they are locked away in their own separate compartments, unreachable from code outside the functions.
+
+The top level outside all your functions is called the **global scope**. Values defined in the global scope are accessible from everywhere in the code.
+
+A function can be called from anywhere, even from another function. 
