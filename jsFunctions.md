@@ -27,6 +27,11 @@ In other words, to put these terms straight:
 -   A parameter is the variable listed inside the parentheses in the function declaration (it’s a declaration time term)
 -   An argument is the value that is passed to the function when it is called (it’s a call time term).
 
+#### Unknown amount of arguments provided
+
+If you want a function to receive an undetermined amount of arguments then you can call on the arguments using the `arguments` object. 
+The first argument is referred to by `arguments[0]` etc. 
+
 ##### Default values
 If a function is called, but an argument is not provided, then the corresponding value becomes `undefined`. 
 
