@@ -71,7 +71,7 @@ let newText = text.replace("Microsoft", "W3Schools");
 - By default, the replace() method
 	- replaces only the first match
 	- is case sensititve
-		- To repalce case *insensitive*, use a **regular expression** wtith an /i flag
+		- To replace case *insensitive*, use a **regular expression** wtith an /i flag
 - To replace all matches use a regualar expression with a /g flag (global match)
 
 ### Converting to Upper and Lower Case

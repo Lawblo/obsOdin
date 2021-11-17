@@ -8,6 +8,7 @@ JavaScript is written in [[HTML]] inside the `<script></script>` tags.
 	- [[jsStrings]]
 - [[jsConditionals]]
 -  [[jsFunctions]]
+-  [[jsArrays]]
 
  
 
