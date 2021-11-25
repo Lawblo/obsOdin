@@ -19,6 +19,12 @@ Basic setup:
 
 [[CSS]] is used to change the way your HTML looks
 
+## HTML terminology
+-   `a` is the **tag**
+-   `href` is the **attribute**
+-   `index.html` is the **attribute value**
+-   `Home` is the **text**.
+
 
 
 

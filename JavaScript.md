@@ -8,7 +8,7 @@
 -  [[jsArrays]]
 -  [[jsLoops]]
 -  [[jsDOM-Manipulation]]
-
+- [[jsObjects]]
 
 
 JavaScript is written in [[HTML]] inside the `<script></script>` tags.
