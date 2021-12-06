@@ -1,4 +1,6 @@
 # JsOperators
+[[JavaScript]]
+
 
 ## jsArithmetic Operators
 Arithmetic operators perform arithmetic on numbers (literals or variables)

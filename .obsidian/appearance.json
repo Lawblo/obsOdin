@@ -3,7 +3,5 @@
   "theme": "obsidian",
   "translucency": true,
   "cssTheme": "Obsidianite",
-  "enabledCssSnippets": [
-    "background"
-  ]
+  "enabledCssSnippets": []
 }
